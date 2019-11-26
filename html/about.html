@@ -26,12 +26,54 @@ You may use this in any way, on any site, all we ask is that you please keep the
 
         <div id="descriptiveContent">
 					<div id="title">
-						<img src="../img/profile_pic.jpg" width=200px height=200px alt="profile_pic">
+						<img src="../img/profile_pic.jpg" width=200px height=200px alt="profile_pic" style="border-radius: 50%">
 					</div>
 						<div id="bluebox_child1">
-								<div id="About" class="tabcontent">
-								  <h3>About Title</h3>
-								  <p>About content</p>
+								<!-- <div id="Projects" class="tabcontent"> -->
+								<div>
+								  <h3>Tomasulo Lite Processor</h3>
+								  <p>
+										This project involved the design, development, and test of a 16-bit soft processor.
+										This processor, dubbed "Tomasulo Lite" after the original Tomasulo Algorithm, was written
+										in VHDL, and utilizes a 5-stage pipeline, branch prediction, out-of-order execution, and
+										in-order commits to speed-up execution time. To-date the best clocks-per-instruction (CPI)
+										achieved is 1.6 - a marked improvement over a CPI of 5.0 for the equivalent, non-pipelined
+										processor:
+									</p>
+									<img src="../img/CPU.png" width=250px height=200px>
+								</div>
+								<div>
+								  <h3>Nixi Tube Clock</h3>
+								  <p>
+										This project was based around old, military-style filament bulbs that each contain the digits
+										0 through 9. The project uses an Arduino Nano, ESP8266, and Cyclone IV FPGA. The Arduino
+										pings a Network Time Protocol (NTP) server requesting an accurate time stamp, then re-packetizes
+										and transmits this data to the FPGA. The FPGA unpacks the data, decodes it, and drives a total of
+										(4 nixi tubes) * (10 digits per nixi tube) = 40 digits via high-power BJTs.
+									</p>
+									<img src="../img/nixitube.jpg" width=250px height=200px>
+								</div>
+								<div>
+								  <h3>Disc Golf Scoring Application</h3>
+								  <p>
+										This project was written for Android phones and based around Java and SQL. The app was basic in that
+										there was no cloud functionality - all data was stored locally due to the small amount of it. The app
+										allowed users to create disc golf courses (assume holes and pars), play each course with an arbitrary number
+										of players, and either save or delete each game played. Once saved, users could view their best game for
+										any given course, view the best player's game at any course, and so on.
+									</p>
+									<img src="../img/discgolfapp.png" width=250px height=450px>
+								</div>
+								<div>
+								  <h3>CS50 Final Project</h3>
+								  <p>
+										This project involved an almost full stack development of a website, utilizing HTML, CSS, Javascript, Python,
+										and SQL. A comprehensive description can be seen in the associated
+										<a href="https://www.youtube.com/watch?v=oAwRVOzAsN4&t=1s">YouTube video</a> that I made. The site is a powerlifting
+										oriented site, allowing the admin to create powerlifting events and allowing users to register for them. Users
+										also had personalized home pages that showed their previous events and a graph displaying the results of each
+										previous event.
+									</p>
 								</div>
 						</div>
         </div>
